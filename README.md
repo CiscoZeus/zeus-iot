@@ -9,8 +9,7 @@ Hardware used
 3. Temperature Sensor LM35
 4. Luminosity Sensor, LDR
 
-![RPi Setup](/zeus-iot/Rpi-Setup-Zeuss.jpg)
-Format: ![Alt Text](url)
+![Photo of RPi Setup used](/zeus-iot/Rpi-Setup-Zeuss.jpg)
 
 The sample program, Rpi-Temperature-Lux-zeus.py, reads the ADC which is connected to Temperature & Luminosity sensor and converts it to actual values(as per the conversion formula).
 
