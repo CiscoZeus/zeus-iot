@@ -11,6 +11,7 @@ Hardware used
 
 ![Photo of RPi Setup used](/zeus-iot/Rpi-Setup-Zeuss.jpg)
 
+.. image:: https://github.com/yindolia/zeus-iot/Rpi-Setup-Zeuss.jpg
 The sample program, Rpi-Temperature-Lux-zeus.py, reads the ADC which is connected to Temperature & Luminosity sensor and converts it to actual values(as per the conversion formula).
 
 It then posts the Json as a key value pair with key = "Json" and value as the json consisting of the sensor values. This is posted over localhost & 8888 port i.e. "http://127.0.0.1:8888" tagged with syslog.*. 
