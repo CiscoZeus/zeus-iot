@@ -17,6 +17,6 @@ It then posts the Json as a key-value pair with key = "Json" and value =the json
 
 The code is trying to replicate the following cURL command
 
-curl --data 'json={"sensor1": 100, "sensor2": 25}' http://localhost:8888/syslog.*
+`curl --data 'json={"sensor1": 100, "sensor2": 25}' http://localhost:8888/syslog.*`
 
 Fluentd is installed and configured to listen port 8888 on localhost. Fluend then transfers the Json to the Zeus Cloud.
