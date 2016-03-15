@@ -29,15 +29,15 @@ Setup Instructions
 2. Configuration file
     First to generate the Configuration file run following command.
 
-  2.1 `sudo fluentd --setup /etc/fluent`
+  `sudo fluentd --setup /etc/fluent`
   
     Now replace it with conf file from Zeus cloud
     
-  2.2 `cd ~; curl -O http://ciscozeus.io/td-agent.conf` 
+  `cd ~; curl -O http://ciscozeus.io/td-agent.conf` 
   
       `sudo cp td-agent.conf /etc/fluent/fluent.conf`
       
-  2.3 edit the conf file and replace <YOUR USERNAME HERE> & <YOUR TOKEN HERE> with your username & token
+  Edit the conf file and replace <YOUR USERNAME HERE> & <YOUR TOKEN HERE> with your username & token
 
 3. Run fluentd by command `sudo fluentd`
 
