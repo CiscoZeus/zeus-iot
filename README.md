@@ -51,7 +51,7 @@ The sample program, `Rpi-Temperature-Lux-zeus.py`, reads the ADC (Analog to Digi
 Temperature & Luminosity sensor and converts it to actual values (as per the conversion formula).
 
 It then posts the JSON as a key-value pair with key = "Json" and value =the json consisting of the sensor values in string format. 
-This is posted over localhost(Raspberry Pi) & 8888 port i.e. "http://127.0.0.1:8888" tagged with syslog.*. 
+This is posted over `localhost`(Raspberry Pi) & `8888` port i.e. `http://127.0.0.1:8888` tagged with `syslog.*`. 
 Hence, the data will be taken into the Logs pipeline of Zeus.
 
 The code is trying to replicate the following cURL command
