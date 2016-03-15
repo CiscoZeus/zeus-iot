@@ -14,6 +14,7 @@ Hardware used
 Setup Instructions
 
 1. Install Fluentd and plugins
+
     Raspbian has Ruby 1.9.3 bundled by default, but some more packages are required. In command prompt run following
 
   `sudo aptitude install ruby-dev`
@@ -27,6 +28,7 @@ Setup Instructions
   `sudo fluent-gem install fluent-plugin-secure-forward`
 
 2. Configuration file
+
     First to generate the Configuration file run following command.
 
   `sudo fluentd --setup /etc/fluent`
