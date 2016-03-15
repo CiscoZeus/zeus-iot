@@ -35,11 +35,11 @@
   
     Now replace it with conf file from Zeus cloud
     
-  `cd ~; curl -O http://ciscozeus.io/td-agent.conf` 
+  `cd ~; curl -O http://ciscozeus.io/td-agent.conf`
   
-      `sudo cp td-agent.conf /etc/fluent/fluent.conf`
+  `sudo cp td-agent.conf /etc/fluent/fluent.conf`
       
-  Edit the conf file and replace <YOUR USERNAME HERE> & <YOUR TOKEN HERE> with your username & token
+  Edit the conf file and replace `<YOUR USERNAME HERE>` & `<YOUR TOKEN HERE>` with your username & token
 
 3. Run fluentd by command `sudo fluentd`
 
