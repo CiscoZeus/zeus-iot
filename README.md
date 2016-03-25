@@ -9,7 +9,7 @@
 3. Temperature Sensor LM35
 4. Luminosity Sensor, LDR
 
-![Photo of RPi Setup used](https://raw.githubusercontent.com/yindolia/zeus-iot/master/Images/Rpi-Setup-Zeuss.jpg?token=AGL3osNIHEYvhsTXz_rtGci8Ssphbp8bks5W79JqwA%3D%3D)
+![Photo of RPi Setup used](https://raw.githubusercontent.com/CiscoZeus/zeus-iot/master/Images/Rpi-Setup-Zeuss.jpg)
 
 ### Setup Instructions
 
