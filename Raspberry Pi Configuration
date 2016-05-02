@@ -1,0 +1,6 @@
+Raspberry Pi is one of the most common single board PC available which can run a full Linux distribution. This makes it identical for many IOT applications.
+This guide will provide step by step instrution for configuring Raspberry Pi and connecting it to Cisco Zeus to upload sensor data.
+
+Step 1
+
+Installing Raspbian
