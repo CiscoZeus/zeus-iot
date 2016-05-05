@@ -12,7 +12,7 @@
 
 ### Setup Instructions
 
-1. Go to Raspberry_Pi_Configuration.md for getting started.
+1. Go to `Raspberry_Pi_Configuration.md` for getting started.
 
 2. Once your Raspberry Pi is ready check `Sensorsetup.md` for details of different sensors, how to use them & sample programs.
 
