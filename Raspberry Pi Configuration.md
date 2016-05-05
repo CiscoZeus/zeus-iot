@@ -54,7 +54,7 @@ Connect to the network once you see your network
 
 Installing the important components.
 
-a. Python
+###a. Python
 
 Python comes pre-loaded on Raspberry pi, but there are few more packages and libraries which would make programming Pi easier for us.
 install the following libraries
@@ -68,7 +68,7 @@ install the following libraries
 `$ sudo pip install cisco-zeus`
 
 
-b. fluentd
+###b. fluentd
 
 Fluend is a daemon which is used to collect all data from all the sources and send it to the cloud is structured and secure way. It is done for data security and ease to handle multiple types and sources of data at the same time.
 
