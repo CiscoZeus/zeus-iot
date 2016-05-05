@@ -18,28 +18,27 @@ Connecting to Wireless internet with Wi-Fi usb Dongle.
 Open file /etc/network/interfaces and edit it as below
 
 
-`auto lo
+    auto lo
 
-iface lo inet loopback
-iface eth0 inet dhcp
+    iface lo inet loopback
+    iface eth0 inet dhcp
 
-allow-hotplug wlan0
-auto wlan0
+    allow-hotplug wlan0
+    auto wlan0
 
-
-iface wlan0 inet manual
-wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+    iface wlan0 inet manual
+    wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
 `
 
 
 Now open /etc/wpa_supplicant/wpa_supplicant.conf and add the following code to it
 
-`network=` 
-`{`
-`essid= <Your_WiFi_Name>`
-`psk = <Your_WiFi_password>`
-`key_mgmt= <Security_Type, WPA, WPA2, etc>`
-`}`
+    network= 
+    {
+    essid= <Your_WiFi_Name>
+    psk = <Your_WiFi_password>
+    key_mgmt= <Security_Type, WPA, WPA2, etc>
+    }
   
 If there are multiple WiFi hotspots, You can add each one as a seperate block in the same file.
 
@@ -55,7 +54,7 @@ Connect to the network once you see your network
 
 Installing the important components.
 
->a. Python
+a. Python
 
 Python comes pre-loaded on Raspberry pi, but there are few more packages and libraries which would make programming Pi easier for us.
 install the following libraries
@@ -69,7 +68,7 @@ install the following libraries
 `$ sudo pip install cisco-zeus`
 
 
->b. fluentd
+b. fluentd
 
 Fluend is a daemon which is used to collect all data from all the sources and send it to the cloud is structured and secure way. It is done for data security and ease to handle multiple types and sources of data at the same time.
 
@@ -89,20 +88,20 @@ Configuration file
 
 Firstly to generate the Configuration file run following command.
 
-sudo fluentd --setup /etc/fluent
+`$ sudo fluentd --setup /etc/fluent`
 
 Now replace it with conf file from Zeus cloud
 
-cd ~; curl -O http://ciscozeus.io/td-agent.conf
+`$ cd ~; curl -O http://ciscozeus.io/td-agent.conf`
 
-sudo cp td-agent.conf /etc/fluent/fluent.conf
+`$ sudo cp td-agent.conf /etc/fluent/fluent.conf`
 
 Edit the conf file and replace <YOUR USERNAME HERE> & <YOUR TOKEN HERE> with your username & token
 
 To run fluentd daemon run the following command
 
-sudo fluentd -c /etc/fluent/fluent.conf
+`$ sudo fluentd -c /etc/fluent/fluent.conf`
 
-Go to Sensorsetup.md for instruction on sensors available and can be used.
+Go to `Sensorsetup.md` for instruction on sensors available and can be used.
 
 
