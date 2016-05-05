@@ -71,6 +71,7 @@ install the following libraries
 ###b. fluentd
 
 **This is not needed if API is to be used**
+
 Fluend is a daemon which is used to collect all data from all the sources and send it to the cloud is structured and secure way. It is done for data security and ease to handle multiple types and sources of data at the same time.
 
 Raspbian distro comes with Ruby 1.9.3. We need some extra packages to install fluentd. Open terminal and run the following commands. (make sure internet is connected)
@@ -103,6 +104,6 @@ To run fluentd daemon run the following command
 
 `$ sudo fluentd -c /etc/fluent/fluent.conf`
 
-Go to `Sensorsetup.md` for instruction on sensors available and can be used.
+Go to *`Sensorsetup.md`* for instruction on sensors available and can be used.
 
 
