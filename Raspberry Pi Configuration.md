@@ -15,7 +15,7 @@ Getting started with Raspberry Pi & Installing Raspbian
 
 Connecting to Wireless internet with Wi-Fi usb Dongle.
 
-Open file /etc/network/interfaces and edit it as below
+Open file `/etc/network/interfaces` and edit it as below
 
 
     auto lo
@@ -31,7 +31,7 @@ Open file /etc/network/interfaces and edit it as below
 `
 
 
-Now open /etc/wpa_supplicant/wpa_supplicant.conf and add the following code to it
+Now open `/etc/wpa_supplicant/wpa_supplicant.conf` and add the following code to it
 
     network= 
     {
@@ -70,7 +70,7 @@ install the following libraries
 
 ###b. fluentd
 
-**This is not needed if API is to be used**
+**This is not needed if API is to be used for communication with Zeus Cloud**
 
 Fluend is a daemon which is used to collect all data from all the sources and send it to the cloud is structured and secure way. It is done for data security and ease to handle multiple types and sources of data at the same time.
 
