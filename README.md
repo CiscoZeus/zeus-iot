@@ -18,3 +18,16 @@
 
 3. After the sensors are working go to `DatauploadZeus.md ` for checking how to upload data to zeus.
 
+
+##Sample Projects
+
+Below are some projects to try with the above sensors.
+
+1. **Motion Sensing**
+    https://www.pubnub.com/blog/2015-06-16-building-a-raspberry-pi-motion-sensor-with-realtime-alerts/
+
+2. **Plant Water Monitoring**
+    http://computers.tutsplus.com/tutorials/build-a-raspberry-pi-moisture-sensor-to-monitor-your-plants--mac-52875
+
+3. **Sump/Tank water level monitor**
+    http://www.raspberrypi-spy.co.uk/2014/09/32x32-led-matrix-on-the-raspberry-pi/
