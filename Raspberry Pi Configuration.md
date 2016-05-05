@@ -1,7 +1,9 @@
+#Raspberry Pi and Cisco Zeus
+
 Raspberry Pi is one of the most common single board PC available which can run a full Linux distribution. This makes it identical for many IOT applications.
 This guide will provide step by step instrution for configuring Raspberry Pi and connecting it to Cisco Zeus to upload sensor data.
 
-*Step 1
+##Step 1
 
 Getting started with Raspbian & Installing Raspbian
 
@@ -9,7 +11,7 @@ Getting started with Raspbian & Installing Raspbian
 
 https://www.andrewmunsell.com/blog/getting-started-raspberry-pi-install-raspbian/`
 
-*Step 2 
+##Step 2 
 
 Connecting to Wireless internet with Wi-Fi usb Dongle.
 
@@ -32,11 +34,12 @@ wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
 
 Now open /etc/wpa_supplicant/wpa_supplicant.conf and add the following code to it
 
-`network= {
-        essid= <Your_WiFi_Name>
-        psk = <Your_WiFi_password>
-        key_mgmt= <Security_Type, WPA, WPA2, etc>
-  }`
+`network=` 
+`{`
+`essid= <Your_WiFi_Name>`
+`psk = <Your_WiFi_password>`
+`key_mgmt= <Security_Type, WPA, WPA2, etc>`
+`}`
   
 If there are multiple WiFi hotspots, You can add each one as a seperate block in the same file.
 
@@ -46,23 +49,27 @@ Scan for available networks
 
 Connect to the network once you see your network
 
-`$ sudo iwconfig wlan0 essid <network_name>
+`$ sudo iwconfig wlan0 essid <network_name>`
 
-*Step 3
+##Step 3
 
 Installing the important components.
 
-a. Python
+>a. Python
 
-Although python comes pre-loaded on Raspberry pi, there are many more packages and libraries which would make programming Pi easier.
-
+Python comes pre-loaded on Raspberry pi, but there are few more packages and libraries which would make programming Pi easier for us.
 install the following libraries
 
 -RPi.GPIO
--Zeus Python client, $ sudo pip install cisco-zeus
+
+`$ sudo apt-get install RPi.GPIO`
+
+-Zeus Python client, 
+
+`$ sudo pip install cisco-zeus`
 
 
-b. fluentd
+>b. fluentd
 
 Fluend is a daemon which is used to collect all data from all the sources and send it to the cloud is structured and secure way. It is done for data security and ease to handle multiple types and sources of data at the same time.
 
@@ -96,6 +103,6 @@ To run fluentd daemon run the following command
 
 sudo fluentd -c /etc/fluent/fluent.conf
 
-Guide on connecting different sensors.
+Go to Sensorsetup.md for instruction on sensors available and can be used.
 
 
