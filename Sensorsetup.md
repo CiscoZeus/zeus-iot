@@ -14,7 +14,7 @@ http://www.raspberrypi-spy.co.uk/2012/12/ultrasonic-distance-measurement-using-p
 
 Also the python program used to collect data is included here.
 
-/programs/ultrasonic_Dist_Sensor.py
+`/programs/ultrasonic_Dist_Sensor.py`
 
 ###2. PIR (presence and motion) sensor
 
@@ -26,7 +26,7 @@ This sensor can be used to detect motion by any object or person. This can there
 
 For using this sensor following python program has been included here.
 
-/programs/PIR_presence_sensor.py
+`/programs/PIR_presence_sensor.py`
 
 ###3. Analog sensors
 
@@ -38,5 +38,5 @@ Analog sensors are sensors which produce voltage signal corresponding to the mea
 
 For using these type of sensors, the program for measuring temperature & Luminosity has been included here. In reality this can be used with any type of analog sensor.
 
-/programs/Rpi-Analog-Sensors.py
+`/programs/Rpi-Analog-Sensors.py`
 
