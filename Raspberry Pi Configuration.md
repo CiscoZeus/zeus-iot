@@ -59,11 +59,11 @@ Installing the important components.
 Python comes pre-loaded on Raspberry pi, but there are few more packages and libraries which would make programming Pi easier for us.
 install the following libraries
 
--RPi.GPIO
+*-RPi.GPIO*
 
 `$ sudo apt-get install RPi.GPIO`
 
--Zeus Python client, 
+*-Zeus Python client,* 
 
 `$ sudo pip install cisco-zeus`
 
