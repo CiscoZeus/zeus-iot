@@ -104,6 +104,6 @@ To run fluentd daemon run the following command
 
 `$ sudo fluentd -c /etc/fluent/fluent.conf`
 
-Go to *`Sensorsetup.md`* for instruction on sensors available and can be used.
+Go to *`Sensorsetup.md`* for instruction on what sensors available and how they can be used.
 
 
