@@ -5,11 +5,11 @@ This guide will provide step by step instrution for configuring Raspberry Pi and
 
 ##Step 1
 
-Getting started with Raspbian & Installing Raspbian
+Getting started with Raspberry Pi & Installing Raspbian
 
-`https://www.raspberrypi.org/help/quick-start-guide/
+`https://www.raspberrypi.org/help/quick-start-guide/`
 
-https://www.andrewmunsell.com/blog/getting-started-raspberry-pi-install-raspbian/`
+`https://www.andrewmunsell.com/blog/getting-started-raspberry-pi-install-raspbian/`
 
 ##Step 2 
 
