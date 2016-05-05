@@ -70,6 +70,7 @@ install the following libraries
 
 ###b. fluentd
 
+
 Fluend is a daemon which is used to collect all data from all the sources and send it to the cloud is structured and secure way. It is done for data security and ease to handle multiple types and sources of data at the same time.
 
 Raspbian distro comes with Ruby 1.9.3. We need some extra packages to install fluentd. Open terminal and run the following commands. (make sure internet is connected)
@@ -84,7 +85,7 @@ Now we need to install some more plugins for communicating with zeus
 
 `$ sudo fluent-gem install fluent-plugin-secure-forward`
 
-Configuration file
+_Configuration file_
 
 Firstly to generate the Configuration file run following command.
 
