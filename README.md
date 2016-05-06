@@ -17,4 +17,22 @@ I. Firstly open `Raspberry_Pi_Configuration.md` for getting started with Raspber
 
 II. Next move to `Sensorsetup.md`. Here you will find details of all the above sensors and how to connect them to Raspberry Pi and log their dat.
 
-III. Next step is to automatically upload the data to Zeus cloud. `DatauploadZeus.py`
+III. Next step is to automatically upload the data to Zeus cloud. `DatauploadZeus.py` provides ways and code for doing so.
+
+###Sample Projects to try
+
+These sensors can be used in multiple projects and IOT applications. Here are a few to try
+
+1. __Motion sensing__
+
+https://www.pubnub.com/blog/2015-06-16-building-a-raspberry-pi-motion-sensor-with-realtime-alerts/
+
+2. __Plant water monitoring__
+
+http://computers.tutsplus.com/tutorials/build-a-raspberry-pi-moisture-sensor-to-monitor-your-plants--mac-52875
+
+3. __Sump Water level monitoring__
+
+http://www.instructables.com/id/Sump-pump-water-level-The-hardware/
+
+
