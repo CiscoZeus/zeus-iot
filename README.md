@@ -157,7 +157,7 @@ For using these type of sensors, the program for measuring temperature & Luminos
 
 To upload data to cisco Zeus cloud service, following are the two ways
 
-####1. Using the API and clients provided by us
+####1. Using the API and clients provided by Zeus
 
 The official documentation is present at 
 
@@ -169,7 +169,7 @@ The python program for sending metrics/data is provided here
 
 This program can be used as an import or could be embedded in your main program.
 
-2. Using Fluentd 
+####2. Using Fluentd 
 
 Steps for installing Fluentd were provided at the beginning here while setting up Raspberry Pi. 
 
@@ -181,15 +181,7 @@ The code is trying to replicate the following cURL command
 
 Fluentd is installed and configured to listen port 8888 on localhost. Fluend then transfers the Json to the Zeus Cloud.
 
-
-
-I. Firstly open `Raspberry_Pi_Configuration.md` for getting started with Raspberry Pi. It will provide resources for installing all required components.
-
-II. Next move to `Sensorsetup.md`. Here you will find details of all the above sensors and how to connect them to Raspberry Pi and log their dat.
-
-III. Next step is to automatically upload the data to Zeus cloud. `DatauploadZeus.py` provides ways and code for doing so.
-
-###Sample Projects to try
+##Sample Projects to try
 
 These sensors can be used in multiple projects and IOT applications. Here are a few to try
 
@@ -201,7 +193,7 @@ https://www.pubnub.com/blog/2015-06-16-building-a-raspberry-pi-motion-sensor-wit
 
 http://computers.tutsplus.com/tutorials/build-a-raspberry-pi-moisture-sensor-to-monitor-your-plants--mac-52875
 
-3. __Sump Water level monitoring__
+3. __Sump/Tank Water level monitoring__
 
 http://www.instructables.com/id/Sump-pump-water-level-The-hardware/
 
