@@ -10,7 +10,7 @@ The python program for sending metrics/data is provided here
 
 This program can be used as an import or could be embedded in your main program.
 
-2.. Using Fluentd which was installed previously on Raspberry Pi. 
+2. Using Fluentd which was installed previously on Raspberry Pi. 
 
 It posts a JSON which is a key-value pair with key = "Json" and value = a json consisting of the sensor values in string format. This is posted over localhost(Raspberry Pi) & 8888 port i.e. `http://127.0.0.1:8888` tagged with `'Raspi'`. Hence, the data will be taken into the Logs pipeline of Zeus.
 
