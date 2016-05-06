@@ -69,7 +69,11 @@ install the following libraries
 
 *-RPi.GPIO*
 
-`$ sudo apt-get install RPi.GPIO`
+`$ sudo pip install RPi.GPIO`
+
+*-spidev*
+
+`$ sudo pip install spidev`
 
 *-Zeus Python client,* 
 
@@ -150,6 +154,10 @@ Analog sensors are sensors which produce voltage signal corresponding to the mea
 <img src="https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Images/mcp3008.jpg" width="300">
 
 <img src="https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Images/analog-sensors.jpg" width="500">
+
+For details of connections to a ADC and then analog sensors please refer the following tutorial
+
+`https://learn.adafruit.com/downloads/pdf/reading-a-analog-in-and-controlling-audio-volume-with-the-raspberry-pi.pdf`
 
 For using these type of sensors, the program for measuring temperature & Luminosity has been included here. In reality this can be used with any type of analog sensor.
 
