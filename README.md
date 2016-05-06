@@ -11,6 +11,8 @@
 5. Temperature Sensor, LM35
 6. Luminosity Sensor, LDR
 
+###Usage
+
 This tutorial consists of step by step guide to collect data of some standard sensors and upload them to Zeus cloud service for analysis.
 
 I. Firstly open `Raspberry_Pi_Configuration.md` for getting started with Raspberry Pi. It will provide resources for installing all required components.
