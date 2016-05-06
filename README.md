@@ -11,6 +11,7 @@
 5. Temperature Sensor, LM35
 6. Luminosity Sensor, LDR
 
+<img src="https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Images/Raspberry-Pi-Setup-Zeus.jpg" width="500">
 ##Usage
 
 Raspberry Pi is one of the most common single board PC available which can run a full Linux distribution. This makes it identical for many IOT applications.
