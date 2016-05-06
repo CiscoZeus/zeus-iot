@@ -119,7 +119,7 @@ There are many sensors which can be used with Raspberry Pi. Below are some most 
 
 These sensors transmit a sound signal and recieve the reflected signal. The time taken between these two events is recorded and is used for calculating the distance using `Distance= Time taken * Signal speed`
 
-![Photo of Ultrasonic Sensor](https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Images/HC-SR04-ultrasonic.jpg)
+<img src="https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Images/HC-SR04-ultrasonic.jpg" width="500">
 
 The following web-address provides detailed use of this sensor with Raspberry Pi.
 
@@ -135,7 +135,7 @@ This sensor can be used to detect motion by any object or person which inturn is
 
 `http://www.instructables.com/id/PIR-Motion-Sensor-Tutorial/`
 
-![Photo of PIR Sensor](https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Images/PIR_sensor.jpg)
+<img src="https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Images/PIR_sensor.jpg" width="500">
 
 For using this sensor following python program has been included here.
 
@@ -145,9 +145,10 @@ For using this sensor following python program has been included here.
 
 Analog sensors are sensors which produce voltage signal corresponding to the measured value. This includes, temperature (RTD, Thermocouple, Thermisters etc), Luminosity (LDR), Humidity, Accelerometers etc. These cannot be directly connected to Raspberry Pi as the Pi does not have any ADC on it. A external ADC like MCP3008 having 8 analog inputs has to be used for converting this into digtial Input which can be read by Raspberry Pi.
 
-![Photo of MCP3008](https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Images/mcp3008.jpg)
 
-![Photo of analog sensors](https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Images/analog-sensors.jpg)
+<img src="https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Images/mcp3008.jpg" width="200">
+
+<img src="https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Images/analog-sensors.jpg" width="500">
 
 For using these type of sensors, the program for measuring temperature & Luminosity has been included here. In reality this can be used with any type of analog sensor.
 
