@@ -22,7 +22,7 @@ This sensor can be used to detect motion by any object or person. This can there
 
 `http://www.instructables.com/id/PIR-Motion-Sensor-Tutorial/`
 
-![Photo of PIR Sensor](https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Images/PIR_sensor.jpg)
+![Photo of PIR Sensor](https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Images/PIR_sensor.jpg = 100x20)
 
 For using this sensor following python program has been included here.
 
