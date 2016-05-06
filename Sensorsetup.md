@@ -7,7 +7,7 @@ There are many sensors which can be used with Raspberry Pi. Below are some most 
 These sensors transmit a sound signal and recieve the reflected signal. The time taken between these two events is recorded and is used for calculating the distance using `Distance= Time taken * Signal speed`
 
 
-<img src="https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Images/HC-SR04-ultrasonic.jpg" width="400">
+<img src="https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Images/HC-SR04-ultrasonic.jpg" width="500">
 ![Photo of Ultrasonic Sensor](https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Images/HC-SR04-ultrasonic.jpg)
 
 The following web-address provides detailed use of this sensor with Raspberry Pi.
