@@ -7,7 +7,7 @@ Created on Wed May 04 23:40:36 2016
 
 from zeus import client as zc
 
-z= zc.ZeusClient('f0069791', 'api.ciscozeus.io')
+z= zc.ZeusClient('<YOUR TOKEN>', 'api.ciscozeus.io')
 
 def Metricsend(a,name,ts):
     #a is value to be transferred, name is name of metric and ts is the timestamp
