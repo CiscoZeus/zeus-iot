@@ -139,6 +139,7 @@ Also the python program used to collect data is included here.
 This sensor can be used to detect motion by any object or person which inturn is also indicative of presence or absence something moving. This can therefore be used to detect human presence. The connection of sensor. More details about the sensor are present in 
 
 `http://www.instructables.com/id/PIR-Motion-Sensor-Tutorial/`
+`http://diyhacking.com/raspberry-pi-gpio-control/`
 
 <img src="https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Images/PIR_sensor.jpg" width="500">
 
