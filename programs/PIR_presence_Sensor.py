@@ -4,7 +4,7 @@
 import RPi.GPIO as gpio
 import time
 import json
-import requests
+import cisco-
 
 gpio.setwarnings(False)
 gpio.setmode(gpio.BOARD)
