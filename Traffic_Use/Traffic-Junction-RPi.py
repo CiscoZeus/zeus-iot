@@ -8,12 +8,12 @@ Created on Thu May 26 20:51:41 2016
 import RPi.GPIO as gpio
 import time
 import json
-#from zeus import client as zc
+from zeus import client as zc
 
 gpio.setwarnings(False)
 gpio.setmode(gpio.BCM)
 
-
+z= zc.ZeusClient(<API_TOKEN>, 'api.ciscozeus.io')
 
 # Use BCM GPIO references
 # instead of physical pin numbers
@@ -109,6 +109,7 @@ while True:
     print (Dist>30 and PIR ==0), (Dist<0 and PIR ==0), (Dist<30 and PIR ==1), (Dist>30 and PIR ==1)
 
     if int(Dist)<30 and PIR ==1:
+    	ts = time.time()
 	print 'Case 1'
         # both on
 	green1(0)
@@ -129,9 +130,12 @@ while True:
         red1(0)
 	red2(1)
 	time.sleep(2)
-    
+    	
+    	log= [{"timestamp":ts, "Street 1": 1, "Street 2": 1}]
+    	z.sendLog("TrafficJunction", log)
 
     elif int(Dist)>30 and PIR ==1:
+    	ts = time.time()
 	print 'Case 2'
         # 1 on 2 off
 	green1(1)
@@ -141,8 +145,12 @@ while True:
 	yellow2(0)
         red2(1)
 	time.sleep(2)
+	
+    	log= [{"timestamp":ts, "Street 1": 1, "Street 2": 0}]
+    	z.sendLog("TrafficJunction", log)
 
     elif int(Dist)<30 and PIR ==0:
+    	ts = time.time()
 	print 'Case 3'
         # 1 on 2 off
 	green1(0)
@@ -150,10 +158,13 @@ while True:
         red1(1)
         green2(1)
         red2(0)
-	
 	time.sleep(2)
 
+    	log= [{"timestamp":ts, "Street 1": 0, "Street 2": 1}]
+    	z.sendLog("TrafficJunction", log)
+    	
     elif int(Dist)>30 and PIR ==0:
+    	ts = time.time()
 	print 'Case 4'
         # 1 off 2 on
 	red1(0)
@@ -163,6 +174,9 @@ while True:
 	red2(0)             
 	time.sleep(2)
  
+    	log= [{"timestamp":ts, "Street 1": 0, "Street 2": 0}]
+    	z.sendLog("TrafficJunction", log)
+    	
 gpio.cleanup()
 '''url = 'http://127.0.0.1:8888/collect.PIR'+str(i)
 r = requests.post(url, data = payload)
