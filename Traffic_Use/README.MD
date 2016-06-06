@@ -29,7 +29,11 @@ A schematic of the physical scenario is shown below.
 
 ###Architecture
 
-The Data is uploaded to the cloud via zeus API (api.ciscozeus.io).
+Raspberry Pi collects data from Sensors which is uploaded to the cloud via zeus API (api.ciscozeus.io).
+
+The data can be viewed and analysed over the cloud and can be used to send specific commands.
+
+In present example the descison of which LED to light is done locally in the raspberry pi. This could be done on the cloud as complexity increases.
 
 A schematic of the architecture is given below.
 
