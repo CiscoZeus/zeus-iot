@@ -13,7 +13,7 @@ In this use case, we create a traffic signal where two streets are merging which
 
 A schematic of the physical scenario is shown below.
 
-<img src="https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Traffic_Use/Street%20Junction.png>
+<img src="https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Traffic_Use/Street%20Junction.png" >
 
 
 ###Hardware Used:
