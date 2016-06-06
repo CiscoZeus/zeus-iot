@@ -26,3 +26,9 @@ A schematic of the physical scenario is shown below.
 
 
 <img src="https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Traffic_Use/Traffic-Signal-Hardware.jpg" >
+
+
+A crude Architecture of whole application is shown below.
+
+
+The Data is uploaded to the cloud via zeus API (api.ciscozeus.io).
