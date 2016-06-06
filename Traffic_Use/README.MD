@@ -27,8 +27,15 @@ A schematic of the physical scenario is shown below.
 
 <img src="https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Traffic_Use/Traffic-Signal-Hardware.jpg" >
 
-
-A crude Architecture of whole application is shown below.
-
+###Architecture
 
 The Data is uploaded to the cloud via zeus API (api.ciscozeus.io).
+
+A schematic of the architecture is given below.
+
+<img src="https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Traffic_Use/Architechture.png" >
+
+###Program / Code
+The program to run the application is written in Python, using the RPi.GPIO Library fro controling the GPIO pins of Raspberry Pi.
+
+Check `Traffic-Junction-RPi.py` in the repository.
