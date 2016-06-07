@@ -166,12 +166,12 @@ while True:
     elif int(Dist)>30 and PIR ==0:
     	ts = time.time()
 	print 'Case 4'
-        # 1 off 2 on
+        # 1 on 2 off, Assuming 1 is expected to have more vehicles than in 2.
 	red1(0)
         green1(1)
-        green2(1)
+        green2(0)
 	yellow2(0)
-	red2(0)             
+	red2(1)             
 	time.sleep(2)
  
     	log= [{"timestamp":ts, "Street 1": 0, "Street 2": 0}]
