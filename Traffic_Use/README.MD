@@ -2,9 +2,9 @@
 
 In this use case, we create a traffic signal where two streets are merging which each other. The following is the description of how it will work.
 
-1. If no vehicles are there in each lane, Both the signals will remain green. This indicates that vehicles coming from any street will get indication to move.
+1. If no vehicles are there in each Street and assuming Street 1 is more busy than Street 2, signal at Street 1 will stay green and signal at street 2 will stay red. This is to make sure that in any case no two signals at the same junction are green.
 
-2. In case vehicle is present in Street 1 and not in Street 2, the Signal at Street 2 will turn red and Street 1 will be green as long as no vehicle is present in the other.
+2. In case vehicle is present in Street 2 and not in Street 1, the signal at Street 1 will turn red and Street 2 will be green as long as no vehicle is present in the other.
 
 3. Similar to case 2, when vehicle is in Street 2 and not in Street 1, Street 2 will have green and Street 1 will have red.
 
