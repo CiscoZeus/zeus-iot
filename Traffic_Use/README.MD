@@ -44,4 +44,5 @@ The program to run the application is written in Python, using the RPi.GPIO Libr
 Two codes are prepared for the illustration.
 
 `Traffic-Junction-RPi.py` in the repository only uploads data to Cisco Zeus Cloud, but do not rely on decison with historical data.
+
 `Traffic-Junction-RPi-Zeus.py` in the repository which uploads data to the cloud and also queries it to make decisons as described in the signal description above.
