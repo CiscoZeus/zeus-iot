@@ -25,7 +25,7 @@ A schematic of the physical scenario is shown below.
 5. Accesories like Breadboard, Male-Male & Male-Female Jumper wires
 
 
-<img src="https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Traffic_Use/Traffic-Signal-Hardware.jpg" >
+<img src="https://raw.githubusercontent.com/yindolia/zeus-iot-1/master/Traffic_Use/Traffic-Signal-Setup-Hardware.jpg" >
 
 ###Architecture
 
