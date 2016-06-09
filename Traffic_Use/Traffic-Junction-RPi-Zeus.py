@@ -154,73 +154,70 @@ while True:
 
 		
     if int(Dist)<30 and PIR ==1:
-		print 'Case 1', latStat
+	print 'Case 1', latStat
         # both on
 
-		if latStat==1:
-			signal1()
-			signal1()
-			signal2()
-		elif latStat==2:
-			signal2()
-			signal2()
-			signal1()	
+	if latStat==1:
+		signal1()
+		signal1()
+		signal2()
+	elif latStat==2:
+		signal2()
+		signal2()
+		signal1()	
 	
 	
-		print Dist, PIR
+	#print Dist, PIR
 	
-		log = [{"level": "1 1"}]	
-#		log = [{ "Street 1": 1, "Street 2":1}]
-		z.sendLog("TrafficJunction", log)
-		print log
-		t= dt.datetime.fromtimestamp(int(ts)).strftime('%Y-%m-%d %H:%M:%S')
-		print t
+	log = [{"level": "1 1"}]	
+#	log = [{ "Street 1": 1, "Street 2":1}]
+	z.sendLog("TrafficJunction", log)
+	print log
+	t= dt.datetime.fromtimestamp(int(ts)).strftime('%Y-%m-%d %H:%M:%S')
+	print t
 
     elif int(Dist)>30 and PIR ==1:
-		ts = time.time()
-		print 'Case 2'
+	ts = time.time()
+	print 'Case 2'
         # 1 on 2 off
-		green1(1)
+	green1(1)
         yellow1(0)
-		red1(0)
+	red1(0)
         green2(0)
-		yellow2(0)
+	yellow2(0)
         red2(1)
-		time.sleep(2)
-		log = [{"level": "1 0"}]
-#		log = [{ "Street 1": 1, "Street 2": 0}]
-		z.sendLog("TrafficJunction", log)
-		print log
-		t= dt.datetime.fromtimestamp(int(ts)).strftime('%Y-%m-%d %H:%M:%S')
-
+	time.sleep(2)
+	log = [{"level": "1 0"}]
+#	log = [{ "Street 1": 1, "Street 2": 0}]
+	z.sendLog("TrafficJunction", log)
+	print log
+	t= dt.datetime.fromtimestamp(int(ts)).strftime('%Y-%m-%d %H:%M:%S')
     elif int(Dist)<30 and PIR ==0:
-		ts = time.time()
-		print 'Case 3'
-        # 1 on 2 off
-		green1(0)
+	ts = time.time()
+	print 'Case 3'
+       # 1 on 2 off
+	green1(0)
         yellow1(0)
         red1(1)
         green2(1)
         red2(0)
 	
-		time.sleep(2)
-		log =[{"level":"0 1"}]
-#		log = [{ "Street 1": 0, "Street 2":1}]
-		z.sendLog("TrafficJunction", log)
-		print log
+	time.sleep(2)
+	log =[{"level":"0 1"}]
+	z.sendLog("TrafficJunction", log)
+	print log
 
     elif int(Dist)>30 and PIR ==0:
-		if latStat==1:
-			signal1()
-		elif latStat ==2:
-			signal2()
-		print 'Case 4'
+	if latStat==1:
+		signal1()
+	elif latStat ==2:
+		signal2()
+	print 'Case 4'
         # Toggle 1 and 2
 	
-		log = [{"level": "0 0"}]
-#		log = [{ "Street 1": 0, "Street 2": 0}]
-		z.sendLog("TrafficJunction", log)	
-		print log
+	log = [{"level": "0 0"}]
+	z.sendLog("TrafficJunction", log)	
+	print log
  
 gpio.cleanup()
 '''url = 'http://127.0.0.1:8888/collect.PIR'+str(i)
