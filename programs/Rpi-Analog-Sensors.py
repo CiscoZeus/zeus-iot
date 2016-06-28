@@ -1,9 +1,12 @@
+#This uses MCP3008 ADC. Any analog sensor can be put in to measure the 
+
 import spidev
 import time
 import requests
 #import sys
 #import collections
 import json
+#import matplotlib.pyplot as plt 
 spi = spidev.SpiDev()
 spi.open(0, 0)
 
@@ -18,39 +21,35 @@ def readadc(adcnum):
 
 #timeSeries = {}
 #readings = int(sys.argv[1])
-#Convert recieved value to volts value. 3.3V is the supply given to ADC.
+
+#Sample for Temp and humidity analog sensors. Can be modified as for any other sensor.
+
+
 def VoltsConversion(data, places):
     volts = (data*3.3)/float(1023)
     volts = round(volts, places)
     return volts
-#Converts temperature from volts to actual temperature.
+
 def TempConversion(data, pos):
     temperature = ((data*330)/float(1023))-50
     temperature = round (temperature, pos)
     return temperature
 
-host = "localhost"
-port = 8888
     
 while True:
-    #Reading adc and conversion
     LuminosityLevel= readadc(0)
     LuminosityVal = VoltsConversion(LuminosityLevel,2)
     TemperatureLevel = readadc(2)
     TemperatureVolts = VoltsConversion(TemperatureLevel,2)
     TempVal= TempConversion (TemperatureVolts,2)
-    #printing value
+    
     print '_____________________________'
     print (TemperatureLevel, TemperatureVolts, TempVal)
     print (LuminosityLevel, LuminosityVal)
     time.sleep(3)
+
+
     
-    #posts data over localhost at 8888
-    newpayload={"json": json.dumps({"Temp":TempVal,
-                                    "Lux":LuminosityVal})}
-    url='http://127.0.0.1:8888/syslog.success'
-    r= requests.post(url, data= newpayload)
-    print('sent successfully')
     
 
 
